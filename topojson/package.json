@@ -1,0 +1,41 @@
+{
+  "name": "topojson",
+  "version": "0.0.8",
+  "description": "An extension to GeoJSON that encodes topology.",
+  "keywords": [
+    "geojson",
+    "shapefile"
+  ],
+  "author": {
+    "name": "Mike Bostock",
+    "url": "http://bost.ocks.org/mike"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/mbostock/topojson.git"
+  },
+  "main": "./index.js",
+  "dependencies": {
+    "optimist": "0.3.5"
+  },
+  "devDependencies": {
+    "vows": "0.6.x"
+  },
+  "bin": {
+    "topojson": "./bin/topojson"
+  },
+  "scripts": {
+    "test": "./node_modules/vows/bin/vows; echo"
+  },
+  "readme": "# TopoJSON\n\n**TopoJSON** is an extension of GeoJSON that encodes topology. Rather than representing geometries discretely, geometries in TopoJSON files are stitched together from shared line segments called *arcs*. TopoJSON eliminates redundancy, offering much more compact representations of geometry than with GeoJSON; typical TopoJSON files are 80% smaller than their GeoJSON equivalents. In addition, TopoJSON facilitates applications that use topology, such as [topology-preserving shape simplification](http://bost.ocks.org/mike/simplify/), [automatic map coloring](http://bl.ocks.org/4188334), and [cartograms](http://prag.ma/code/d3-cartogram/).\n\nWant to learn more? [See the wiki.](/mbostock/topojson/wiki)\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/mbostock/topojson/issues"
+  },
+  "_id": "topojson@0.0.8",
+  "dist": {
+    "shasum": "b84dc4ca9a376978094813a7b7f661416d4d20a1"
+  },
+  "_from": "topojson@0.0.8",
+  "_resolved": "https://registry.npmjs.org/topojson/-/topojson-0.0.8.tgz"
+}
